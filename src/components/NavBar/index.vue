@@ -24,12 +24,12 @@ export default {
     return {
       sections: [
         {
-          title: 'home',
-          path: 'HomeSection'
+          title: 'resume',
+          path: 'ResumeSection'
         },
         {
-          title: 'skills',
-          path: 'SkillsSection'
+          title: 'projects',
+          path: 'ProjectsSection'
         }
       ]
     };

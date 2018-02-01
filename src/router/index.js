@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import HomeSection from '@/components/HomeSection';
-import SkillsSection from '@/components/SkillsSection';
+import ResumeSection from '@/components/ResumeSection';
+import ProjectsSection from '@/components/ProjectsSection';
 
 Vue.use(Router);
 
@@ -10,13 +10,13 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HomeSection',
-      component: HomeSection
+      name: 'ResumeSection',
+      component: ResumeSection
     },
     {
-      path: '/Skills',
-      name: 'SkillsSection',
-      component: SkillsSection
+      path: '/Projects',
+      name: 'ProjectsSection',
+      component: ProjectsSection
     }
   ]
 });

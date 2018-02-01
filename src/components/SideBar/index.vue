@@ -17,21 +17,22 @@
       <h3>tagline</h3>
     </div>
 
-    <svgicon icon="person" class="blurb-icon" color="#ffffff"></svgicon>
-
-    <p class="blurb">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam congue velit eu nulla fermentum accumsan. Nullam eu mi nec ex aliquet condimentum vel id lectus.
-    </p>
-
+    <SideBarSection icon="person">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam congue velit eu nulla fermentum accumsan. Nullam eu mi nec ex aliquet condimentum vel id lectus.
+      </p>
+    </SideBarSection>
   </div>
 </template>
 
 <script>
 import Card from '@/components/Card';
+import SideBarSection from '@/components/SideBar/SideBarSection';
 export default {
   name: 'SideBar',
   components: {
-    Card
+    Card,
+    SideBarSection
   },
   data () {
     return {
@@ -49,15 +50,13 @@ export default {
 
   padding: 0;
   background-color: #5da4d9;
-  display: grid;
   position: relative;
+
+  display: grid;
   grid-template-columns: 25% auto;
-  grid-template-rows: auto auto auto;
 }
 .headshot {
-  grid-row: 1 / 2;
   grid-column: 1 / 3;
-  position: static;
 }
 .headshot img{
   width: 100%;
@@ -78,8 +77,8 @@ export default {
 } */
 
 .title {
-  grid-row: 2 / 3;
-  grid-column: 2 / 3;
+  grid-row: 2;
+  grid-column: 2;
   color: white;
   text-align: left;
   margin-top: 1em;
@@ -98,24 +97,5 @@ export default {
   line-height: 1.5em;
   padding: 0;
   margin: 0;
-}
-.blurb-icon {
-  grid-row: 3 / 4;
-  grid-column: 1 / 2;
-  width: 2rem;
-  display: block;
-  margin: 2em auto 0 auto;
-
-}
-.blurb{
-  grid-row: 3 / 4;
-  grid-column: 2 / 3;
-  text-align: left;
-  color: white;
-  font-weight: 300;
-  font-size: 0.85em;
-  line-height: 1.7em;
-  border-top: 1px solid #4783c2;
-  padding-top: 1em;
 }
 </style>
