@@ -38,6 +38,7 @@ export default {
   height: 100%;
   width: auto;
   text-decoration: none;
+  padding: 0 1em;
 }
 
 .navBarItem.selected .link {

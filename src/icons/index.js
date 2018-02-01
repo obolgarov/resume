@@ -1,0 +1,11 @@
+/* eslint-disable */
+require('./folder')
+require('./home')
+require('./mail')
+require('./person')
+require('./phone')
+require('./quote')
+require('./school')
+require('./send')
+require('./wizhat')
+require('./work')

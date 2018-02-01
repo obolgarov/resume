@@ -1,12 +1,9 @@
 <template>
-  <div class="homeSection">
+  <div class="skillsSection">
     <!-- detailed description -->
-    <p>
-      asdf
-    </p>
     <SectionCard icon="person" title="About Me">
       <p>
-        Home Lorum Ipsum etc.
+        Skills Lorum Ipsum etc.
       </p>
     </SectionCard>
   </div>
@@ -15,7 +12,7 @@
 <script>
 import SectionCard from '@/components/SectionCard';
 export default {
-  name: 'HomeSection',
+  name: 'SkillsSection',
   components: {
     SectionCard
   }
@@ -23,7 +20,7 @@ export default {
 </script>
 
 <style scoped>
-.homeSection {
+.skillsSection {
 
 }
 </style>
