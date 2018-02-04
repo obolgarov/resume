@@ -33,8 +33,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   width: 100%;
-  height: 100%;
-  background-color: #e3e3e3;
+  height: auto;
+  padding-bottom: 5em;
+  color: #767270;
 }
 
 #mainContainer {

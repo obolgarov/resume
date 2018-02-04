@@ -22,12 +22,34 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam congue velit eu nulla fermentum accumsan. Nullam eu mi nec ex aliquet condimentum vel id lectus.
       </p>
     </SideBarSection>
+
+    <SideBarSection icon="phone">
+      <h3>(000)-000-0000</h3>
+      <h4>mobile</h4>
+      <br />
+      <h3>(000)-000-0000</h3>
+      <h4>work</h4>
+    </SideBarSection>
+
+    <SideBarSection icon="mail">
+      <h3>mail@mail.mail</h3>
+      <h4>personal</h4>
+      <br />
+      <h3>spam@spam.spam</h3>
+      <h4>work</h4>
+    </SideBarSection>
+
+    <SideBarSection icon="home">
+      <h3>asdf street</h3>
+      <h3>Province, Country</h3>
+      <h4>A1A 1A1</h4>
+    </SideBarSection>
   </div>
 </template>
 
 <script>
 import Card from '@/components/Card';
-import SideBarSection from '@/components/SideBar/SideBarSection';
+import SideBarSection from '@/components/SideBar/Section';
 export default {
   name: 'SideBar',
   components: {

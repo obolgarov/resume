@@ -1,11 +1,13 @@
 <template>
   <Card class="sectionCard">
-    <!-- icon -->
+    <svgicon :icon="icon" class="icon" color="#767270"></svgicon>
 
-    <!-- title -->
+    <div class="content">
+      <h1 class="title">{{title}}</h1>
 
-    <!-- contents -->
-    <slot></slot>
+      <slot></slot>
+    </div>
+
   </Card>
 </template>
 
@@ -29,4 +31,28 @@ export default {
 </script>
 
 <style scoped>
+.sectionCard {
+  display: grid;
+  grid-template-columns: 20% auto;
+  padding: 3em 0 2em 0;
+}
+
+.icon {
+  width: 3em;
+  display: block;
+  margin: 0 auto;
+}
+
+.content {
+  text-align: left;
+}
+.content h1{
+  margin: 0;
+  padding: 0;
+}
+
+/* styling optional "section" component */
+.section {
+  background-color: blue;
+}
 </style>
