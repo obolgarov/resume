@@ -45,7 +45,7 @@ export default {
 
   /* playing with this new grid thing */
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 2fr;
 }
 
 /* adding 'the' to disclose there is only one of these. Also, because they're

@@ -6,6 +6,51 @@
         Projects Lorum Ipsum etc.
       </p>
     </SectionCard>
+    <SectionCard icon="person" title="About Me">
+      <p>
+        Projects Lorum Ipsum etc.
+      </p>
+    </SectionCard>
+    <SectionCard icon="person" title="About Me">
+      <p>
+        Projects Lorum Ipsum etc.
+      </p>
+    </SectionCard>
+    <SectionCard icon="person" title="About Me">
+      <p>
+        Projects Lorum Ipsum etc.
+      </p>
+    </SectionCard>
+    <SectionCard icon="person" title="About Me">
+      <p>
+        Projects Lorum Ipsum etc.
+      </p>
+    </SectionCard>
+    <SectionCard icon="person" title="About Me">
+      <p>
+        Projects Lorum Ipsum etc.
+      </p>
+    </SectionCard>
+    <SectionCard icon="person" title="About Me">
+      <p>
+        Projects Lorum Ipsum etc.
+      </p>
+    </SectionCard>
+    <SectionCard icon="person" title="About Me">
+      <p>
+        Projects Lorum Ipsum etc.
+      </p>
+    </SectionCard>
+    <SectionCard icon="person" title="About Me">
+      <p>
+        Projects Lorum Ipsum etc.
+      </p>
+    </SectionCard>
+    <SectionCard icon="person" title="About Me">
+      <p>
+        Projects Lorum Ipsum etc.
+      </p>
+    </SectionCard>
   </div>
 </template>
 
