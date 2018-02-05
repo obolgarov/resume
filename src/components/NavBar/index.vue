@@ -28,8 +28,8 @@ export default {
           path: 'ResumeSection'
         },
         {
-          title: 'projects',
-          path: 'ProjectsSection'
+          title: 'portfolio',
+          path: 'PortfolioSection'
         }
       ]
     };

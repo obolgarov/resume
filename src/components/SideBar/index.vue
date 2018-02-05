@@ -1,49 +1,50 @@
 <template>
-  <div class="sideBar">
+  <div class="gridContainer">
+    <div class="sideBar">
+      <div class="headshot">
+        <img :src="headshot" />
 
-    <div class="headshot">
-      <img :src="headshot" />
+        <!-- <div class="title">
+          <h2>Oleksandr Bolgarov</h2>
+          <h3>Software Developer</h3>
+          <h3>tagline</h3>
+        </div> -->
+      </div>
 
-      <!-- <div class="title">
+      <div class="title">
         <h2>Oleksandr Bolgarov</h2>
         <h3>Software Developer</h3>
         <h3>tagline</h3>
-      </div> -->
+      </div>
+
+      <SideBarSection icon="person">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam congue velit eu nulla fermentum accumsan. Nullam eu mi nec ex aliquet condimentum vel id lectus.
+        </p>
+      </SideBarSection>
+
+      <SideBarSection icon="phone">
+        <h3>(000)-000-0000</h3>
+        <h4>mobile</h4>
+        <br />
+        <h3>(000)-000-0000</h3>
+        <h4>work</h4>
+      </SideBarSection>
+
+      <SideBarSection icon="mail">
+        <h3>mail@mail.mail</h3>
+        <h4>personal</h4>
+        <br />
+        <h3>spam@spam.spam</h3>
+        <h4>work</h4>
+      </SideBarSection>
+
+      <SideBarSection icon="home">
+        <h3>asdf street</h3>
+        <h3>Province, Country</h3>
+        <h4>A1A 1A1</h4>
+      </SideBarSection>
     </div>
-
-    <div class="title">
-      <h2>Oleksandr Bolgarov</h2>
-      <h3>Software Developer</h3>
-      <h3>tagline</h3>
-    </div>
-
-    <SideBarSection icon="person">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam congue velit eu nulla fermentum accumsan. Nullam eu mi nec ex aliquet condimentum vel id lectus.
-      </p>
-    </SideBarSection>
-
-    <SideBarSection icon="phone">
-      <h3>(000)-000-0000</h3>
-      <h4>mobile</h4>
-      <br />
-      <h3>(000)-000-0000</h3>
-      <h4>work</h4>
-    </SideBarSection>
-
-    <SideBarSection icon="mail">
-      <h3>mail@mail.mail</h3>
-      <h4>personal</h4>
-      <br />
-      <h3>spam@spam.spam</h3>
-      <h4>work</h4>
-    </SideBarSection>
-
-    <SideBarSection icon="home">
-      <h3>asdf street</h3>
-      <h3>Province, Country</h3>
-      <h4>A1A 1A1</h4>
-    </SideBarSection>
   </div>
 </template>
 
@@ -65,6 +66,11 @@ export default {
 </script>
 
 <style scoped>
+.gridContainer {
+  height: auto;
+  width: auto;
+  display: block;
+}
 .sideBar {
   margin: 1em 0.5em 0em 0.5em;
   padding: 2em;
