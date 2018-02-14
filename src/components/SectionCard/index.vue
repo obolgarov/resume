@@ -31,10 +31,10 @@ export default {
 </script>
 
 <style scoped>
-.sectionCard {
+.card.sectionCard {
   display: grid;
   grid-template-columns: 20% auto;
-  padding: 3em 0 2em 0;
+  padding: 2em 0 2em 0;
 }
 
 .icon {
@@ -45,10 +45,14 @@ export default {
 
 .content {
   text-align: left;
+  margin-top: 0.5em;
 }
-.content h1{
+
+h1{
   margin: 0;
   padding: 0;
+  font-weight: 500;
+  font-size: 22pt;
 }
 
 /* styling optional "section" component */

@@ -1,0 +1,47 @@
+<template>
+  <div class="formComponent">
+    <form @submit.prevent="onSubmit">
+      <slot></slot>
+      <!-- TODO: insert captcha here -->
+      <input type="submit" value="submit">
+    </form>
+  </div>
+</template>
+
+<script>
+// import SectionCard from '@/components/SectionCard';
+// import SectionCardSection from '@/components/SectionCard/Section';
+
+export default {
+  name: 'FormComponent',
+  methods: {
+    onSubmit (event) {
+      this.$emit('submit');
+    }
+  }
+};
+</script>
+
+<style scoped>
+.formComponent {
+  width: 100%;
+  padding: 1.5em 0;
+}
+
+input[type="submit"] {
+  font-size: 1em;
+  font-weight: 500;
+  padding: 0.7em 2em 0.6em 2em;
+  border: none;
+  border-radius: 0.2em;
+  background-color: #5da4d9;
+  text-transform: uppercase;
+  color: white;
+  transition: box-shadow 0.3s;
+  margin-top: 1em;
+}
+input[type="submit"]:hover {
+  cursor: pointer;
+  box-shadow: 0 3px 9px rgba(0,0,0,0.16), 0 3px 9px rgba(0,0,0,0.23);
+}
+</style>

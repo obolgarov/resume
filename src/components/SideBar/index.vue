@@ -23,6 +23,12 @@
         </p>
       </SideBarSection>
 
+      <SideBarSection icon="github">
+        <h3 class="githubLink">
+          <a href="https://github.com/obolgarov">github.com/obolgarov</a>
+        </h3>
+      </SideBarSection>
+
       <SideBarSection icon="phone">
         <h3>(000)-000-0000</h3>
         <h4>mobile</h4>
@@ -77,7 +83,7 @@ export default {
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 
   padding: 0;
-  background-color: #5da4d9;
+  background-color: #2196f3;
   position: relative;
 
   display: grid;
@@ -125,5 +131,12 @@ export default {
   line-height: 1.5em;
   padding: 0;
   margin: 0;
+}
+
+h3.githubLink {
+  margin: 0.5em 0;
+}
+a {
+  color: inherit;
 }
 </style>

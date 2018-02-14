@@ -27,9 +27,13 @@ export default {
           title: 'resume',
           path: 'ResumeSection'
         },
+        // {
+        //   title: 'portfolio',
+        //   path: 'PortfolioSection'
+        // },
         {
-          title: 'portfolio',
-          path: 'PortfolioSection'
+          title: 'contact',
+          path: 'ContactSection'
         }
       ]
     };

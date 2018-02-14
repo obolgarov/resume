@@ -1,5 +1,6 @@
 /* eslint-disable */
 require('./folder')
+require('./github')
 require('./home')
 require('./mail')
 require('./person')

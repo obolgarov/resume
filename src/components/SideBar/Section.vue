@@ -39,24 +39,24 @@ export default {
   padding-top: 2em;
   margin: 1em 0;
 }
-.content p{
+p{
   margin: 0;
   padding: 0;
 }
-.content h3 {
+h3 {
   margin: 0;
   padding: 0;
   font-size: 1.2em;
   font-weight: 400;
 }
-.content h4 {
+h4 {
   margin: 0;
   padding: 0;
   font-size: 1.1em;
   font-weight: 300;
   opacity: 0.7;
 }
-.content br {
+br {
 
 }
 </style>
