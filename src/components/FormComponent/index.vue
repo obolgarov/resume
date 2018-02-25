@@ -26,7 +26,7 @@ export default {
   },
   data () {
     return {
-      sitekey: '6Lf-GEgUAAAAAJ9vftl6mZpcdAf-WlXmZVV3gJmL'
+      sitekey: '6LcUg0gUAAAAAPvtbkRbSeYXpHbaSYMQ7_DylFFc'
     };
   },
   methods: {
