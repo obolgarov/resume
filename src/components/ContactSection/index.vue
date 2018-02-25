@@ -15,6 +15,8 @@ import SectionCard from '@/components/SectionCard';
 // import SectionCardSection from '@/components/SectionCard/Section';
 import FormComponent from '@/components/FormComponent';
 import FormInput from '@/components/FormComponent/FormInput';
+// import config from '@/config.js';
+import axios from 'axios';
 
 export default {
   name: 'ContactSection',
@@ -30,9 +32,19 @@ export default {
       message: ''
     };
   },
+  mounted () {
+    // console.log(config);
+  },
   methods: {
-    onSubmit () {
-      console.log();
+    onSubmit (recaptchaChallenge) {
+      // get ip of user before sending to server
+
+      axios.post('http://localhost:8080/email', {
+        name: this.name,
+        email: this.email,
+        message: this.message,
+        recaptchaChallenge: recaptchaChallenge
+      });
     }
   }
 };

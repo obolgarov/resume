@@ -2,7 +2,13 @@
   <div class="formComponent">
     <form @submit.prevent="onSubmit">
       <slot></slot>
-      <!-- TODO: insert captcha here -->
+      <!-- <VueRecaptcha sitekey="6Lf-GEgUAAAAAJ9vftl6mZpcdAf-WlXmZVV3gJmL"></VueRecaptcha> -->
+      <!-- <div id="g-recaptcha" class="g-recaptcha"
+      :data-sitekey="sitekey"
+      :data-callback="testFunc"
+      data-size="invisible">
+      </div> -->
+      <VueRecaptcha ref="recaptcha" :sitekey="sitekey" size="invisible" @verify="onRecaptchaVerify"></VueRecaptcha>
       <input type="submit" value="submit">
     </form>
   </div>
@@ -11,12 +17,24 @@
 <script>
 // import SectionCard from '@/components/SectionCard';
 // import SectionCardSection from '@/components/SectionCard/Section';
+import VueRecaptcha from 'vue-recaptcha';
 
 export default {
   name: 'FormComponent',
+  components: {
+    VueRecaptcha
+  },
+  data () {
+    return {
+      sitekey: '6Lf-GEgUAAAAAJ9vftl6mZpcdAf-WlXmZVV3gJmL'
+    };
+  },
   methods: {
     onSubmit (event) {
-      this.$emit('submit');
+      this.$refs.recaptcha.execute();
+    },
+    onRecaptchaVerify (response) {
+      this.$emit('submit', response);
     }
   }
 };

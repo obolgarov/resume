@@ -40,7 +40,7 @@ export default {
   },
   methods: {
     getSelected (routeName) {
-      console.log('matching');
+      // console.log('matching');
       return routeName === this.$route.name;
     }
   }

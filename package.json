@@ -14,7 +14,9 @@
     "svg": "vsvg -s ./static/svg/src -t ./src/icons --tpl ./static/svg/template.js"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "vue": "^2.5.2",
+    "vue-recaptcha": "^1.1.0",
     "vue-router": "^3.0.1",
     "vue-svgicon": "^2.1.2"
   },

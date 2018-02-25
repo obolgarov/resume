@@ -89,7 +89,7 @@ input, textarea {
 .formInput.focused input,.formInput.focused textarea {
   border-bottom: 3px solid #5da4d9;
 }
-.formInput.filled:not(.focused) input,.formInput.filled:not(.focused) textarea {
+.formInput.filled:not(.focused):not(.valid) input,.formInput.filled:not(.focused):not(.valid) textarea {
   border-bottom: 3px solid #f44336;
 }
 .formInput.filled.valid:not(.focused) input,.formInput.filled.valid:not(.focused) textarea {

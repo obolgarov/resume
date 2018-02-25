@@ -4,11 +4,11 @@
       <div class="headshot">
         <img :src="headshot" />
 
-        <!-- <div class="title">
+        <div class="title">
           <h2>Oleksandr Bolgarov</h2>
           <h3>Software Developer</h3>
           <h3>tagline</h3>
-        </div> -->
+        </div>
       </div>
 
       <div class="title">
@@ -19,36 +19,18 @@
 
       <SideBarSection icon="person">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam congue velit eu nulla fermentum accumsan. Nullam eu mi nec ex aliquet condimentum vel id lectus.
+          Software/Web App Developer with experience in modern development techniques.
         </p>
       </SideBarSection>
 
       <SideBarSection icon="github">
-        <h3 class="githubLink">
+        <h3 class="centered">
           <a href="https://github.com/obolgarov">github.com/obolgarov</a>
         </h3>
       </SideBarSection>
 
       <SideBarSection icon="phone">
-        <h3>(000)-000-0000</h3>
-        <h4>mobile</h4>
-        <br />
-        <h3>(000)-000-0000</h3>
-        <h4>work</h4>
-      </SideBarSection>
-
-      <SideBarSection icon="mail">
-        <h3>mail@mail.mail</h3>
-        <h4>personal</h4>
-        <br />
-        <h3>spam@spam.spam</h3>
-        <h4>work</h4>
-      </SideBarSection>
-
-      <SideBarSection icon="home">
-        <h3>asdf street</h3>
-        <h3>Province, Country</h3>
-        <h4>A1A 1A1</h4>
+        <h3 class="centered">(416)-707-3330</h3>
       </SideBarSection>
     </div>
   </div>
@@ -79,10 +61,10 @@ export default {
 }
 .sideBar {
   margin: 1em 0.5em 0em 0.5em;
-  padding: 2em;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 
   padding: 0;
+  padding-bottom: 1em;
   background-color: #2196f3;
   position: relative;
 
@@ -99,7 +81,7 @@ export default {
   padding: 0;
   display: block;
 }
-/* .headshot .title {
+.headshot .title {
   position: absolute;
   grid-row: 1 / 2;
   grid-column: 2 / 3;
@@ -108,7 +90,7 @@ export default {
 
   color: #2196f3;
   text-align: left;
-} */
+}
 
 .title {
   grid-row: 2;
@@ -133,7 +115,7 @@ export default {
   margin: 0;
 }
 
-h3.githubLink {
+h3.centered {
   margin: 0.5em 0;
 }
 a {
