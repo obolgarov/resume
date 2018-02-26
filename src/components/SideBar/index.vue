@@ -15,7 +15,7 @@
         <h2>Oleksandr Bolgarov</h2>
         <h3>Software Developer</h3>
         <h3>tagline</h3>
-      </div> --> 
+      </div> -->
 
       <SideBarSection icon="person">
         <p>
