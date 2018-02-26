@@ -1,6 +1,9 @@
 <template>
   <div class="resumeSection">
     <SectionCard icon="wizhat" title="Skills">
+      <p>
+        TODO
+      </p>
     </SectionCard>
     <SectionCard icon="work" title="Experience">
       <SectionCardSection>
