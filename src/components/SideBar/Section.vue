@@ -39,7 +39,7 @@ export default {
   border-bottom: 1px solid #4783c2;
   justify-content: center;
   flex-direction: column;
-  padding: 2em 0;
+  padding: 2em 2em 2em 0;
 }
 .sideBarSection:last-child .content {
   border: none;

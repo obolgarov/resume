@@ -39,7 +39,7 @@ export default {
     onSubmit (recaptchaChallenge) {
       // get ip of user before sending to server
 
-      axios.post('http://localhost:8080/email', {
+      axios.post('https://api.resume.bolgarov.org/email', {
         name: this.name,
         email: this.email,
         message: this.message,
