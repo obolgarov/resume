@@ -11,11 +11,11 @@
         </div>
       </div>
 
-      <div class="title">
+      <!-- <div class="title">
         <h2>Oleksandr Bolgarov</h2>
         <h3>Software Developer</h3>
         <h3>tagline</h3>
-      </div>
+      </div> -->
 
       <SideBarSection icon="person">
         <p>
@@ -89,7 +89,7 @@ export default {
   left: 0;
   bottom: 2rem;
 
-  color: #2196f3;
+  color: #335f9c;
   text-align: left;
 }
 
