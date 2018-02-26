@@ -19,7 +19,7 @@
 
       <SideBarSection icon="person">
         <p>
-          Software/Web App Developer with experience in modern development techniques.
+          Software/Web Developer with experience in modern development techniques.
         </p>
       </SideBarSection>
 
@@ -47,7 +47,8 @@ export default {
   },
   data () {
     return {
-      headshot: 'https://img.buzzfeed.com/buzzfeed-static/static/2015-05/20/13/campaign_images/webdr01/what-your-favorite-stock-photo-spaghetti-person-s-2-7471-1432142821-2_dblbig.jpg'
+      // headshot: 'https://img.buzzfeed.com/buzzfeed-static/static/2015-05/20/13/campaign_images/webdr01/what-your-favorite-stock-photo-spaghetti-person-s-2-7471-1432142821-2_dblbig.jpg'
+      headshot: 'http://oleksandr.bolgarov.org/images/id.jpg'
     };
   }
 };
