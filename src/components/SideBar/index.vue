@@ -89,7 +89,7 @@ export default {
   left: 0;
   bottom: 2rem;
 
-  color: #335f9c;
+  color: white;
   text-align: left;
 }
 

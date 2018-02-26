@@ -27,7 +27,7 @@ export default {
 .section-icon {
   width: 1.8rem;
   display: block;
-  margin: 3em auto 0 auto;
+  margin: 2em auto 0 auto;
 }
 .content{
   text-align: left;
@@ -35,10 +35,16 @@ export default {
   font-weight: 300;
   font-size: 0.85em;
   line-height: 1.7em;
-  border-top: 1px solid #4783c2;
-  padding-top: 2em;
-  margin: 1em 0;
+  display: flex;
+  border-bottom: 1px solid #4783c2;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2em 0;
 }
+.sideBarSection:last-child .content {
+  border: none;
+}
+
 p{
   margin: 0;
   padding: 0;
@@ -55,8 +61,5 @@ h4 {
   font-size: 1.1em;
   font-weight: 300;
   opacity: 0.7;
-}
-br {
-
 }
 </style>

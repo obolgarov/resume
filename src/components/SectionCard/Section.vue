@@ -9,8 +9,8 @@
 
 <style scoped>
 .section {
-  width: 100%;
-  padding: 1.5em 0;
+  width: auto;
+  padding: 1.5em 1em 1.5em 0;
 }
 .section:not(:last-of-type) {
   border-bottom: 1px solid #bdbdbd;
@@ -30,7 +30,19 @@ h4 {
   font-weight: 500;
   color: #5da4d9;
 }
-p {
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li{
+  margin: 0.7em 0 0 0;
+  padding: 0;
+  font-size: 0.85em;
+  line-height: 1.2em;
+  font-weight: 300;
+}
+p{
   margin: 0;
   padding: 0;
   font-size: 0.85em;
