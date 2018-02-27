@@ -39,22 +39,34 @@ export default {
 }
 
 #mainContainer {
-  width: 70%;
+  width: 100%;
   max-width: 80em;
   margin: 0 auto;
 
   /* playing with this new grid thing */
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr;
 }
 
 /* adding 'the' to disclose there is only one of these. Also, because they're
    ids. Needed because this component can't scope its styles.
    TODO: contain these in a component so I can scope styles */
 #theSidebar {
-  grid-column: 1 / span 1;
+  grid-column: 1;
 }
 #theSectionView{
-  grid-column: 2 / span 2;
+  grid-column: 1;
+}
+
+@media (min-width: 60em) {
+  #mainContainer {
+    grid-template-columns: 1fr 2fr;
+  }
+  #theSidebar {
+    grid-column: 1 / span 1;
+  }
+  #theSectionView {
+    grid-column: 2 / span 2;
+  }
 }
 </style>

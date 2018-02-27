@@ -29,6 +29,12 @@
         </h3>
       </SideBarSection>
 
+      <SideBarSection icon="linkedin">
+        <h3 class="centered">
+          <a href="https://www.linkedin.com/in/oleksandr-bolgarov-51025794/">LinkedIn</a>
+        </h3>
+      </SideBarSection>
+
       <SideBarSection icon="phone">
         <h3 class="centered">(416)-707-3330</h3>
       </SideBarSection>
@@ -121,5 +127,22 @@ h3.centered {
 }
 a {
   color: inherit;
+}
+
+@media (min-width: 60em) {
+  #mainContainer {
+  }
+  .title h2 {
+    font-size: 1.6em;
+  }
+}
+
+@media (min-width: 80em) {
+  #mainContainer {
+  }
+
+  .title h2 {
+    font-size: 1.8em;
+  }
 }
 </style>

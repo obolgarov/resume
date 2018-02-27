@@ -2,6 +2,7 @@
 require('./folder')
 require('./github')
 require('./home')
+require('./linkedin')
 require('./mail')
 require('./person')
 require('./phone')

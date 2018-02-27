@@ -73,7 +73,7 @@
         </ul>
       </SectionCardSection>
       <SectionCardSection>
-        <h3>Web Developer at Ryan Design Incorporated</h3>
+        <h3>Web Developer at Ryan Design</h3>
         <h4>April 2014 - August 2014</h4>
         <ul>
           <li>
