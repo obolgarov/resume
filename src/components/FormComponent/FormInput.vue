@@ -12,7 +12,7 @@
     <textarea v-if="type == 'textarea'" v-model="value"
     @focus="focused = true"
     @blur="focused = false"/>
-    <input v-else type="text" v-model="value"
+    <input v-else type="text" v-model="computedValue"
     @focus="focused = true"
     @blur="focused = false"/>
   </div>
@@ -34,6 +34,16 @@ export default {
       value: '',
       focused: false
     };
+  },
+  computed: {
+    computedValue: {
+      get () {
+        return this.value;
+      },
+      set (newVal) {
+        this.$emit('update', newVal);
+      }
+    }
   }
 };
 </script>

@@ -2,9 +2,9 @@
   <div class="contactSection">
     <SectionCard icon="send" title="Contact">
       <FormComponent @submit="onSubmit">
-        <FormInput type="text" label="Name" v-model="name"></FormInput>
-        <FormInput type="text" label="Email" v-model="email"></FormInput>
-        <FormInput type="textarea" label="Message" v-model="message"></FormInput>
+        <FormInput type="text" label="Name" :model="name" @update="updateName"></FormInput>
+        <FormInput type="text" label="Email" :model="email" @update="updateEmail"></FormInput>
+        <FormInput type="textarea" label="Message" :model="message" @update="updateMessage"></FormInput>
       </FormComponent>
     </SectionCard>
   </div>
@@ -50,6 +50,17 @@ export default {
         console.log('error');
         console.log(error);
       });
+    },
+    updateName (newVal) {
+      console.log(newVal);
+      this.name = newVal;
+      console.log(this.name);
+    },
+    updateEmail (newVal) {
+      this.email = newVal;
+    },
+    updateMessage (newVal) {
+      this.message = newVal;
     }
   }
 };
