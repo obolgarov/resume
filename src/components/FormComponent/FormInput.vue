@@ -2,14 +2,14 @@
   <div :class="{
     formInput: true,
     focused: focused,
-    filled: value.length > 0,
+    filled: model.length > 0,
     valid: validator ? !validator.$invalid : true,
   }">
     <label v-if="label">
       {{label}}
     </label>
 
-    <textarea v-if="type == 'textarea'" v-model="value"
+    <textarea v-if="type == 'textarea'" v-model="computedValue"
     @focus="focused = true"
     @blur="focused = false"/>
     <input v-else type="text" v-model="computedValue"
@@ -25,20 +25,20 @@ export default {
   components: {
   },
   props: [
+    'model',
     'type',
     'label',
     'validator'
   ],
   data () {
     return {
-      value: '',
       focused: false
     };
   },
   computed: {
     computedValue: {
       get () {
-        return this.value;
+        return this.model;
       },
       set (newVal) {
         this.$emit('update', newVal);
