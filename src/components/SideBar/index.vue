@@ -3,41 +3,43 @@
     <div class="sideBar">
       <div class="headshot">
         <img :src="headshot" />
+        <!-- <div class="title">
+          <h2>Oleksandr Bolgarov</h2>
+          <h3>Software Developer</h3>
+          <h4>tagline</h4>
+        </div> -->
+      </div>
+
+      <div class="contents">
 
         <div class="title">
           <h2>Oleksandr Bolgarov</h2>
           <h3>Software Developer</h3>
-          <h3>tagline</h3>
+          <h4>tagline</h4>
         </div>
+
+        <SideBarSection icon="person">
+          <p>
+            Software/Web Developer with experience in modern development techniques.
+          </p>
+        </SideBarSection>
+
+        <SideBarSection icon="github">
+          <h3 class="centered">
+            <a href="https://github.com/obolgarov">github.com/obolgarov</a>
+          </h3>
+        </SideBarSection>
+
+        <SideBarSection icon="linkedin">
+          <h3 class="centered">
+            <a href="https://www.linkedin.com/in/oleksandr-bolgarov-51025794/">LinkedIn</a>
+          </h3>
+        </SideBarSection>
+
+        <SideBarSection icon="phone">
+          <h3 class="centered">(416)-707-3330</h3>
+        </SideBarSection>
       </div>
-
-      <!-- <div class="title">
-        <h2>Oleksandr Bolgarov</h2>
-        <h3>Software Developer</h3>
-        <h3>tagline</h3>
-      </div> -->
-
-      <SideBarSection icon="person">
-        <p>
-          Software/Web Developer with experience in modern development techniques.
-        </p>
-      </SideBarSection>
-
-      <SideBarSection icon="github">
-        <h3 class="centered">
-          <a href="https://github.com/obolgarov">github.com/obolgarov</a>
-        </h3>
-      </SideBarSection>
-
-      <SideBarSection icon="linkedin">
-        <h3 class="centered">
-          <a href="https://www.linkedin.com/in/oleksandr-bolgarov-51025794/">LinkedIn</a>
-        </h3>
-      </SideBarSection>
-
-      <SideBarSection icon="phone">
-        <h3 class="centered">(416)-707-3330</h3>
-      </SideBarSection>
     </div>
   </div>
 </template>
@@ -78,6 +80,12 @@ export default {
   display: grid;
   grid-template-columns: 25% auto;
 }
+.contents {
+  position: relative;
+  display: grid;
+  grid-template-columns: 25% auto;
+  grid-column: 1 / 3;
+}
 .headshot {
   grid-column: 1 / 3;
 }
@@ -87,39 +95,35 @@ export default {
   margin: 0;
   padding: 0;
   display: block;
-}
-.headshot .title {
-  position: absolute;
-  grid-row: 1 / 2;
-  grid-column: 2 / 3;
-  left: 0;
-  bottom: 2rem;
-
-  color: white;
-  text-align: left;
+  grid-column: 1 / 3;
 }
 
-.title {
-  grid-row: 2;
+.title { /* for out-of-headshot titles */
   grid-column: 2;
   color: white;
   text-align: left;
-  margin-top: 1em;
+  position: absolute;
+  padding-bottom: 1em;
+  transform: translateY(-100%);
 }
 
 .title h2 {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.8em;
-  line-height: 1.5em;
   margin: 0;
   padding: 0;
 }
 .title h3 {
   font-weight: 600;
   font-size: 1em;
-  line-height: 1.5em;
   padding: 0;
   margin: 0;
+}
+.title h4 {
+  font-weight: 400;
+  font-size: 1em;
+  margin: 0;
+  padding: 1em 0 0 0;
 }
 
 h3.centered {
@@ -129,18 +133,40 @@ a {
   color: inherit;
 }
 
+@media (min-width: 40em) {
+  #mainContainer {
+  }
+  .headshot {
+    grid-column: 1 / 2;
+  }
+  .title {
+    position: static;
+    display: flex;
+    transform: none;
+    margin-top: -50%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
 @media (min-width: 60em) {
   #mainContainer {
+  }
+  .headshot {
+    grid-column: 1 / 3;
+  }
+  .title {
+    position: absolute;
+    display: block;
+    transform: translateY(-100%);
+    margin-top: 0;
   }
   .title h2 {
     font-size: 1.6em;
   }
 }
-
 @media (min-width: 80em) {
-  #mainContainer {
-  }
-
   .title h2 {
     font-size: 1.8em;
   }
