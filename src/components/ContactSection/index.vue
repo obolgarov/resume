@@ -6,6 +6,7 @@
         <FormInput type="text" label="Email" :model="email" @update="(newVal) => {email = newVal}"></FormInput>
         <FormInput type="textarea" label="Message" :model="message" @update="(newVal) => {message = newVal}"></FormInput>
       </FormComponent>
+      <h4 class="status" v-if="messageStatus.length > 0">{{messageStatus}}</h4>
     </SectionCard>
   </div>
 </template>
@@ -29,7 +30,8 @@ export default {
     return {
       name: '',
       email: '',
-      message: ''
+      message: '',
+      messageStatus: ''
     };
   },
   mounted () {
@@ -42,9 +44,14 @@ export default {
         message: this.message,
         recaptchaChallenge: recaptchaChallenge
       }).then((result) => {
+        this.name = '';
+        this.email = '';
+        this.message = '';
+        this.messageStatus = 'Message Sent';
       }).catch((error) => {
         console.log('message error');
         console.log(error);
+        this.messageStatus = 'Error Sending Message';
       });
     }
   }
@@ -54,5 +61,13 @@ export default {
 <style scoped>
 .contactSection {
 
+}
+.status {
+  margin: 0;
+  padding: 0;
+  font-size: 0.85em;
+  line-height: 1.6em;
+  font-weight: 500;
+  color: #5da490;
 }
 </style>
