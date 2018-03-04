@@ -36,17 +36,14 @@ export default {
   },
   methods: {
     onSubmit (recaptchaChallenge) {
-      console.log('submitting with challenge: ');
-      console.log(recaptchaChallenge);
       axios.post(config.apiUrl + '/email', {
         name: this.name,
         email: this.email,
         message: this.message,
         recaptchaChallenge: recaptchaChallenge
       }).then((result) => {
-        console.log('success');
       }).catch((error) => {
-        console.log('error');
+        console.log('message error');
         console.log(error);
       });
     }
