@@ -87,7 +87,8 @@
     </SectionCard>
     <SectionCard icon="school" title="Education">
       <SectionCardSection>
-        <h3>Software Development and Network Engineering Co-op at Sheridan College</h3>
+        <h3>Software Development and Network Engineering Co-op</h3>
+        <h3>Advanced Associates Degree at Sheridan College</h3>
         <h4>2016</h4>
         <ul>
           <li>
